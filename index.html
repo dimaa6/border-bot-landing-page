@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UA Border Bot — Швидкий перетин кордону</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <link rel="icon" type="image/jpeg" href="bot_icon.jpeg">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Nav -->
+    <header class="max-w-6xl mx-auto w-full px-6 py-6 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <img src="bot_icon.jpeg" alt="UA Border Bot Logo" class="w-8 h-8 rounded-full object-cover shadow-sm">
+            <span class="font-bold text-xl tracking-tight text-slate-900">UA Border Bot</span>
+        </div>
+        <div>
+            <a href="https://github.com/dimaa6/border-bot" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition flex items-center space-x-1">
+                <span>GitHub</span>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="max-w-4xl mx-auto px-6 pt-12 pb-16 text-center flex-grow flex flex-col justify-center items-center">
+        <div class="inline-flex items-center space-x-2 bg-emerald-50 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6 border border-emerald-200">
+            <span>🇺🇦 Волонтерський проект</span>
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight max-w-2xl mb-6 leading-tight">
+            Обирайте найшвидший пункт пропуску через кордон
+        </h1>
+        
+        <p class="text-lg text-slate-600 max-w-2xl mb-10 leading-relaxed">
+            Бот допомагає самостійним мандрівникам уникати черг на державному кордоні України. Ніякого спаму та реклами — лише реальна статистика від водіїв для водіїв, щоб зберегти ваші нерви та час.
+        </p>
+
+        <!-- Massive Hero Button -->
+        <div class="w-full max-w-sm mb-16">
+            <a href="https://t.me/ua_border_traffic_bot" target="_blank" rel="noopener noreferrer" 
+               class="group relative flex items-center justify-center w-full bg-emerald-600 text-white font-bold text-lg px-8 py-5 rounded-2xl shadow-xl shadow-emerald-600/20 hover:bg-emerald-500 hover:shadow-emerald-500/30 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0">
+                <img src="bot_icon.jpeg" alt="" class="w-7 h-7 rounded-full object-cover mr-3 bg-white">
+                <span>Запустити Бота в Telegram</span>
+                <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </a>
+            <p class="text-xs text-slate-400 mt-3 font-medium">Повністю безкоштовно • Працює на базі AWS & Cloudflare</p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid md:grid-cols-3 gap-6 max-w-4xl text-left">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4 border border-emerald-100">⏱️</div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">Фіксація у два кліки</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Ви натискаєте усього дві кнопки: <span class="font-semibold text-slate-800">«Почати перетин»</span> на в'їзді та <span class="font-semibold text-slate-800">«Перетин завершено»</span> на виїзді. Бот автоматично зафіксує точний час.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4 border border-emerald-100">📊</div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">Розумний прорахунок</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Алгоритм обробляє зібрані логи та миттєво оновлює середній час очікування для кожного конкретного пункту пропуску саме на поточний час доби.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4 border border-emerald-100">🤝</div>
+                    <h3 class="text-base font-bold text-slate-900 mb-2">Взаємодопомога</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Ділячись своїм часом, ви допомагаєте іншим водіям обрати найменш завантажений шлях і зменшити рівень стресу під час подорожі, що так важливо в теперішні часи.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white w-full py-8 text-center text-xs text-slate-400 font-medium">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                &copy; 2026 UA Border Bot. Створено з повагою до мандрівників.
+            </div>
+            <div class="flex space-x-6">
+                <span class="text-slate-500">Без трекерів</span>
+                <span class="text-slate-500">Без реклами</span>
+                <span class="text-slate-500">Open Source</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
