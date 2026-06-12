@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UA Border Bot — сервіс для моніторингу черг на кордоні України. Отримуйте актуальну інформацію від водіїв та обирайте найшвидший пункт пропуску.">
     <title>UA Border Bot — Швидкий перетин кордону</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-    </style>
-    <link rel="icon" type="image/jpeg" href="bot_icon.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/webp" href="bot_icon_64x64.webp">
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Header / Nav -->
     <header class="max-w-6xl mx-auto w-full px-6 py-6 flex justify-between items-center">
         <div class="flex items-center space-x-2">
-            <img src="bot_icon.jpeg" alt="UA Border Bot Logo" class="w-8 h-8 rounded-full object-cover shadow-sm">
+            <img src="bot_icon_64x64.webp" alt="UA Border Bot Logo" width="32" height="32" class="w-8 h-8 rounded-full object-cover shadow-sm">
             <span class="font-bold text-xl tracking-tight text-slate-900">UA Border Bot</span>
         </div>
         <div>
@@ -46,7 +45,7 @@
         <div class="w-full max-w-sm mb-16">
             <a href="https://t.me/ua_border_traffic_bot" target="_blank" rel="noopener noreferrer" 
                class="group relative flex items-center justify-center w-full bg-emerald-600 text-white font-bold text-lg px-8 py-5 rounded-2xl shadow-xl shadow-emerald-600/20 hover:bg-emerald-500 hover:shadow-emerald-500/30 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0">
-                <img src="bot_icon.jpeg" alt="" class="w-7 h-7 rounded-full object-cover mr-3 bg-white">
+                <img src="bot_icon_64x64.webp" alt="Telegram Bot Icon" width="28" height="28" class="w-7 h-7 rounded-full object-cover mr-3 bg-white">
                 <span>Запустити Бота в Telegram</span>
                 <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>

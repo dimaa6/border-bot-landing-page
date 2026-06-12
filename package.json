@@ -1,0 +1,24 @@
+{
+  "name": "border-bot-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimaa6/border-bot-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dimaa6/border-bot-landing-page/issues"
+  },
+  "homepage": "https://github.com/dimaa6/border-bot-landing-page#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.3.0"
+  }
+}
