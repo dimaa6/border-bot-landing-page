@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @tailwindcss/cli -i ./input.css -o ./style.css --minify"
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./style.css --minify && node -e \"const fs=require('fs'); let html=fs.readFileSync('index.html', 'utf8'); const css=fs.readFileSync('style.css', 'utf8'); html=html.replace('<link rel=\\x22stylesheet\\x22 href=\\x22style.css\\x22>', '<style>' + css + '</style>'); fs.writeFileSync('index.html', html);\""
   },
   "repository": {
     "type": "git",
