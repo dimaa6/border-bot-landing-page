@@ -18,6 +18,16 @@
     <link rel="alternate" hreflang="x-default" href="https://border-bot-landing-page.pages.dev/" />
 
     <title>UA Border Bot — Швидкий перетин кордону</title>
+    
+    <!-- Auto-redirect to RU if browser is Russian and user hasn't manually overridden -->
+    <script>
+        if (!localStorage.getItem('lang_override')) {
+            if ((navigator.language || navigator.userLanguage || '').toLowerCase().startsWith('ru')) {
+                window.location.replace('ru.html');
+            }
+        }
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/webp" href="bot_icon_64x64.webp">
 </head>
@@ -33,7 +43,7 @@
             <!-- Language Switcher -->
             <div class="flex items-center bg-slate-200/50 rounded-full p-1 text-xs font-semibold">
                 <span class="px-3 py-1 rounded-full bg-white shadow-sm text-slate-800">УКР</span>
-                <a href="ru.html" class="px-3 py-1 rounded-full text-slate-500 hover:text-slate-800 transition">РУС</a>
+                <a href="ru.html" onclick="localStorage.setItem('lang_override', '1')" class="px-3 py-1 rounded-full text-slate-500 hover:text-slate-800 transition">РУС</a>
             </div>
 
             <a href="https://github.com/dimaa6/border-bot" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-slate-600 hover:text-slate-900 transition flex items-center space-x-1 p-2 -m-2">
